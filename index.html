@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Tip calculator app</title>
+</head>
+<body>
+  <img src="assets/images/logo.svg" alt="splitter logo">
+  <section class="container">
+    <div class="input-section">
+        <div class="bill-amount">
+          <label for="billAmount">Bill</label>
+          <div>
+            <span class="input-icon"></span>
+            <input type="number" name="" id="billAmount" placeholder="0">
+          </div>
+        </div>
+        <div class="tip-amount">
+          <label>Select Tip %</label>
+          
+          <div class="buttons-list">
+            <button class="fixed-value" id="btn5">5%</button>
+            <button class="fixed-value" id="btn10">10%</button>
+            <button class="fixed-value" id="btn15">15%</button>
+            <button class="fixed-value" id="btn25">25%</button>
+            <button class="fixed-value" id="btn50">50%</button>
+            <input type="number" name="" id="customTip" placeholder="Custom">
+          </div>
+        </div>
+        <div class="people-count">
+          <label for="peopleCount">Number of People <span class="err-msg">Can't be zero</span></label> 
+          <div>
+            <span class="input-icon"></span>
+            <input type="number" name="" id="peopleCount" placeholder="0">
+          </div>
+        </div>
+    </div>
+    <div class="output-section">
+      <div>
+        <div class="output">
+          <p>Tip Amount <br> <span>/ person</span></p>
+          <span> <span>$</span> <h3 id="tipAmount">0.00</h3></span>
+        </div>
+        <div class="output">
+          <p>Total <br> <span>/ person</span></p>
+          <span> <span>$</span>  <h3 id="totalAmount">0.00</h3> </span>
+        </div>
+      </div>
+
+      <button class="disabled" id="reset">Reset</button>
+    </div>
+  </section>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
