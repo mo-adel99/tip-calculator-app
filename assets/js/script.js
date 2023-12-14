@@ -123,3 +123,11 @@ peopleCount.addEventListener("keyup", function(){
     validatePeopleNum(tip);
   }
 })
+
+billAmount.addEventListener("keyup", function() {
+  if (customTip.value > 0) {
+    validatePeopleNum(customTip.value);
+  } else {
+    validatePeopleNum(tip);
+  }
+})
